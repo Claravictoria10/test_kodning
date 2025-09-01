@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hækling</title>
+    <style>
+      body {
+        background-color: hsl(346, 27%, 79%);
+        color: #9a0015;
+        font-family: "Georgia", serif;
+        padding: 14px;
+      }
+      .container {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+      }
+      .video-billede {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      video {
+        max-width: 640px;
+        height: auto;
+        border-radius: 40px;
+      }
+      .billeder-rad {
+        display: flex;
+        gap: 20px;
+      }
+      .billeder-rad img {
+        max-width: 310px;
+        height: auto;
+        border-radius: 40px;
+        display: block;
+      }
+      button {
+        background-color: #ffdde1;
+        color: #9a0015;
+        border: none;
+        padding: 12px 24px;
+        font-size: 14px;
+        border-radius: 55px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 10px;
+        align-self: center;
+      }
+      button:hover {
+        background-color: hsl(345, 39%, 75%);
+      }
+      .tekst {
+        max-width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hæklet clutches + sommertop</h1>
+    <div class="container">
+      <div class="video-billede">
+        <video width="640" height="360" controls>
+          <source src="video/tasker.mp4" type="video/mp4" />
+          Din browser understøtter ikke videoafspilning.
+        </video>
+        <div class="billeder-rad">
+          <img src="img/lille_taske.jpeg" alt="Lille taske" />
+          <img src="img/stor_taske.jpeg" alt="Stor taske" />
+        </div>
+        <button onclick="window.location.href='side4.html'">
+          Se hæklet top, samt få opskriften!
+        </button>
+      </div>
+      <div class="tekst">
+        <p>
+          Her er et lille klip af nogle af mine hæklede tasker. Jeg laver mest
+          denne slags, fordi de er hyggelige og nemme at gå til.
+        </p>
+        <p>
+          Indimellem kaster jeg mig også over andre typer tasker som for
+          eksempel disse fine clutches. <br />
+          De tager lidt længere tid at lave og kræver mere tålmodighed, men det
+          er det hele værd.
+        </p>
+        <p>
+          Her er to af de clutches, jeg har hæklet. Den ene er en stor
+          makeuptaske, og den anden er en lille, som er nemmere at have med i
+          tasken.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
